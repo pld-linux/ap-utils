@@ -21,20 +21,24 @@ bezprzewodowych.
 %setup -q
 
 %build
-%configure
-%{__make}
+%{__libtoolize}
+%configure2_13
+%{__make} CC="gcc -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
 %doc Documentation/FAQ Documentation/*.html
 %lang(uk) %doc Documentation/Ukrainian/*
-%{_bindir}/*
-%{_sbindir}/*
+%attr(755,root,root)%{_bindir}/*
+%attr(755,root,root)%{_sbindir}/*
 %{_mandir}/man8/*
