@@ -1,4 +1,4 @@
-%define		_pre	pre1
+%define		_pre	pre2
 Summary:	Configure and monitor Wireless Access Points
 Summary(pl):	Konfiguracja i monitoring punktów dostêpu bezprzewodowego (Access Points)
 Name:		ap-utils
