@@ -20,7 +20,7 @@ Konfiguracja i monitoring punktów dostêpu (Access Points) dla sieci
 bezprzewodowych.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %{__libtoolize}
@@ -30,6 +30,7 @@ bezprzewodowych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
