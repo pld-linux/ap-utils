@@ -1,11 +1,11 @@
 Summary:	Configure and monitor Wireless Access Points
 Summary(pl):	Konfiguracja i monitoring punktów dostêpu bezprzewodowego (Access Points)
 Name:		ap-utils
-Version:	1.3.1
-Release:	1
+Version:	1.3.2
+Release:	0.pre2.1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://dl.sourceforge.net/ap-utils/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/ap-utils/%{name}-%{version}-pre2.tar.bz2
 Patch0:		%{name}-po.patch
 URL:		http://ap-utils.polesye.net/
 BuildRequires:	libtool
@@ -20,7 +20,7 @@ Konfiguracja i monitoring punktów dostêpu (Access Points) dla sieci
 bezprzewodowych.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-pre2
 %patch -p1
 
 %build
