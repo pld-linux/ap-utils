@@ -5,11 +5,12 @@ Version:	1.4.1
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://dl.sourceforge.net/sourceforge/ap-utils/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/ap-utils/%{name}-%{version}.tar.bz2
 # Source0-md5:	15b3ee8ae8f5e501ffa6dd8ced9c528d
 URL:		http://ap-utils.polesye.net/
+BuildRequires:	automake
 BuildRequires:	libtool
-BuildRequires:	ncurses-devel
+BuildRequires:	ncurses-ext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
