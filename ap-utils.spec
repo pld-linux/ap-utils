@@ -23,6 +23,7 @@ bezprzewodowych.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %{__libtoolize}
 %configure2_13
 %{__make} \
