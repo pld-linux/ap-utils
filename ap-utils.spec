@@ -1,8 +1,8 @@
-%define		_pre	pre3
+%define		_pre	pre1
 Summary:	Configure and monitor Wireless Access Points
 Summary(pl):	Konfiguracja i monitoring punktów dostêpu bezprzewodowego (Access Points)
 Name:		ap-utils
-Version:	1.3.2
+Version:	1.3.3
 Release:	0.%{_pre}.1
 License:	GPL
 Group:		Networking/Utilities
