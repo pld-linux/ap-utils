@@ -26,11 +26,13 @@ bezprzewodowych.
 %build
 %{__libtoolize}
 %configure2_13
-%{__make} CC="%{__cc} -I/usr/include/ncurses"
+%{__make} \
+	CC="%{__cc} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
