@@ -7,6 +7,7 @@ License:	GPL
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/ap-utils/%{name}-%{version}.tar.bz2
 URL:		http://ap-utils.polesye.net/
+BuildRequires:	libtool
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +24,7 @@ bezprzewodowych.
 %build
 %{__libtoolize}
 %configure2_13
-%{__make} CC="gcc -I/usr/include/ncurses"
+%{__make} CC="%{__cc} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -39,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
 %doc Documentation/FAQ Documentation/*.html
 %lang(uk) %doc Documentation/Ukrainian/*
-%attr(755,root,root)%{_bindir}/*
-%attr(755,root,root)%{_sbindir}/*
+%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man8/*
