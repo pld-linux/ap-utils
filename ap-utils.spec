@@ -4,7 +4,7 @@ Name:		ap-utils
 Version:	1.3.1
 Release:	1
 License:	GPL
-Group:		
+Group:		Networking/Utilities
 Source0:	http://prdownloads.sourceforge.net/ap-utils/%{name}-%{version}.tar.bz2
 URL:		http://ap-utils.polesye.net/
 BuildRequires:	ncurses-devel
