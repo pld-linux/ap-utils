@@ -7,7 +7,7 @@ Release:	0.%{_pre}.1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/ap-utils/%{name}-%{version}-%{_pre}.tar.bz2
-# Source0-md5:	64a4290526de86746bc94b35b89c53c4
+# Source0-md5:	bedff10edc74bdb8679a8bc20f07065f
 URL:		http://ap-utils.polesye.net/
 BuildRequires:	libtool
 BuildRequires:	ncurses-devel
