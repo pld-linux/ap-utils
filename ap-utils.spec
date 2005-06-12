@@ -10,9 +10,9 @@ Source0:	ftp://linux.zhitomir.net/ap-utils/%{name}-%{version}.tar.bz2
 # Source0-md5:	ebdb2a03302648c939ac965617de2889
 URL:		http://ap-utils.polesye.net/
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	libtool
 BuildRequires:	ncurses-ext-devel
-BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
