@@ -23,7 +23,7 @@ Konfiguracja i monitoring punktów dostêpu (Access Points) dla sieci
 bezprzewodowych.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 %build
 cp -f /usr/share/automake/config.sub .
 %{__libtoolize}
