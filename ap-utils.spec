@@ -3,6 +3,7 @@ Summary(pl):	Konfiguracja i monitoring punktów dostêpu bezprzewodowego (Access P
 Name:		ap-utils
 Version:	1.5
 Release:	1
+Epoch:		1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://linux.zhitomir.net/ap-utils/%{name}-%{version}.tar.bz2
@@ -11,6 +12,7 @@ URL:		http://ap-utils.polesye.net/
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	ncurses-ext-devel
+BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
