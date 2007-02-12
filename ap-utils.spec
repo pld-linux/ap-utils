@@ -1,5 +1,5 @@
 Summary:	Configure and monitor Wireless Access Points
-Summary(pl):	Konfiguracja i monitoring punktów dostêpu bezprzewodowego (Access Points)
+Summary(pl.UTF-8):   Konfiguracja i monitoring punktÃ³w dostÄ™pu bezprzewodowego (Access Points)
 Name:		ap-utils
 Version:	1.5
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Configure and monitor Wireless Access Points.
 
-%description -l pl
-Konfiguracja i monitoring punktów dostêpu (Access Points) dla sieci
+%description -l pl.UTF-8
+Konfiguracja i monitoring punktÃ³w dostÄ™pu (Access Points) dla sieci
 bezprzewodowych.
 
 %prep
